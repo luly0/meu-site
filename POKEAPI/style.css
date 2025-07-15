@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/Ash_com_pokemon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Press Start 2P', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pokedex {
+    background: url('assets/pokedex.png') no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 600px;
+    position: relative;
+    margin: auto;
+    padding: 0;
+}
+
+
+.screen {
+    position: absolute;
+    top: 23%;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 55%;
+    text-align: center;
+    z-index: 2;
+    background: transparent;
+    border-radius: 8px;
+    padding: 78px;
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#pokemonImage {
+    width: 80px;
+    image-rendering: pixelated;
+}
+
+
+.type {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.75rem;
+    margin: 2px;
+    text-transform: capitalize;
+}
+
+.type.normal { background: #A8A878; }
+.type.fire { background: #F08030; }
+.type.water { background: #6890F0; }
+.type.grass { background: #78C850; }
+.type.electric { background: #F8D030; }
+.type.ice { background: #98D8D8; }
+.type.fighting { background: #C03028; }
+.type.poison { background: #A040A0; }
+.type.ground { background: #E0C068; }
+.type.flying { background: #A890F0; }
+.type.psychic { background: #F85888; }
+.type.bug { background: #A8B820; }
+.type.rock { background: #B8A038; }
+.type.ghost { background: #705898; }
+.type.dark { background: #705848; }
+.type.steel { background: #B8B8D0; }
+.type.fairy { background: #EE99AC; }
+.type.dragon { background: #7038F8; }
+
+
+#pokemonName {
+    font-size: 16px;
+    margin: 0;
+    color: #000;
+}
+
+#pokemonId {
+    color: #666;
+    font-size: 12px;
+}
+
+
+.controle {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 3;
+}
+
+#searchInput {
+    padding: 8px;
+    border: 3px solid #000;
+    border-radius: 8px;
+    font-family: 'Press Start 2P', cursive;
+    width: 70%;
+}
+
+button {
+    background: #ffde00;
+    border: 3px solid #000;
+    border-radius: 8px;
+    padding: 10px 12px;
+    width: 100px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
